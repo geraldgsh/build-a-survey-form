@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html {
+  background: url('https://www.officelovin.com/wp-content/uploads/2016/02/bubble-prague-office-5.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 800px
+}
+
+
+body {
+    background: transparent;    
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+    min-height: 100%;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.survey {
+    padding: 2em 2em 4em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    background: #000000;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 800px;
+    min-height: 840px;
+    opacity: 0.7;
+    border-radius: 2.5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.radio-form {
+    display: table-row;
+}
+
+.text {
+    text-emphasis-color: black;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  color: #000000;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;  
+}
+
+#submit-button {
+    margin-left: 225px;
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

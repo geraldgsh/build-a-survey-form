@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <body>
+        <div class="survey">
+            <div class="container-survey">
+                <h1 id="title">Coworking Space Survey</h1>
+                <p id="description">A Coworking Space is a shared work space for entrepreneurs, telecommuters, small businesses or anyone needing office space, that provides desks, computers, office equipment, high speed internet, conferencing rooms and equipment for rent at a more economical rate than renting or buying office space.</p>
+                <p id="description">Typically, co-working spaces use a monthly (or longer) subscription or rental model (participants are often called members). Some offer drop-in or short-term memberships. Still others offer classes, training, workshops and equipment rental.</p>
+                <p>Please take a few moments to answer the questions below.  Your answers will help us gather important information about potential uses for a coworking space in the area:</p>
+                <hr>
+                
+                <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com"></form>
+                
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">* Name: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                    </div>
+                        
+                    <div class="rowTab">
+                    <div class="labels">
+                        <label id="age-label" for="age">* Age: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus type="number" name="age" id="age" class="input-field" placeholder="Enter your age" required>
+                    </div>
+                        
+                    <div class="rowTab">
+                    <div class="labels">
+                        <label id="gender-label" for="gender">Gender:</label>
+                    </div>
+                        
+                        <div class="rightTab">
+                            <p class="radio-form">                                
+                                <span id="cell">
+                                    <input type="radio" name="gender" class="gender-input" value="female">
+                                    <label for="gender" class="gender-label">Female</label><br>
+                                    <input type="radio" name="gender" class="gender-input" value="male">
+                                    <label for="gender" class="gender-label">Male</label><br>
+                                </span>
+                            </p>                            
+                        </div>
+                        
+                        <div class="rowTab">
+                            <div class="labels">
+                                <label for="rating">* Is it likely that you would make use of a coworking space if one opened in the area?</label>
+                            </div>
+                            <div class="rightTab">
+                                <p class="radio-form">
+                                    <span id="cell">
+                                        <input type="radio" name="rating" class="rating-input" value="yes">
+                                        <label for="rating" class="rating-label">Yes</label><br>
+                                        <input type="radio" name="rating" class="rating-input" value="no">
+                                        <label for="rating" class="rating-label">No</label><br>
+                                        <input type="radio" name="rating" class="rating-input" value="maybe">
+                                        <label for="rating" class="rating-label">Maybe</label><br>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="rowTab">
+                                <div class="labels">
+                                    <label for="preferences">* If yes, do you have specific ideas for how you might use a coworking space or benefit from it?</label>
+                                </div>
+                                <div class="rightTab">
+                                    <ul id="preferences" class="radio-form" style="list-style: none;">
+                                        <span id="cell">
+                                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Telecommuting</label></li>
+                                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Small business</label></li>
+                                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Video / phone conferencing</label></li>
+                                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Typical office uses</label></li>
+                                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Other (please specify)</label></li>
+                                            <textarea id="comments" class="input-field" style="height:100px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                                        </span>                                        
+                                    </ul>
+                                </div>
+                            
+                            <div class="rowTab">
+                                <div class="labels">
+                                    <label for="rating">* Do you have any other thoughts, suggestions or questions about a coworking space in the area?</label>
+                                </div>
+                                <div class="rightTab">
+                                    <textarea id="comments" class="input-field" style="height:100px;resize:vertical;" name="comment" placeholder="Enter your question here..."></textarea>
+                                </div>                            
+                        </div>                                                               
+                </div>                            
+            </div>
+                        
+        </div>
+                        <div id="submit-button">
+                            <button id="submit" type="submit">Submit</button> 
+                        </div>
+    </body>
+
